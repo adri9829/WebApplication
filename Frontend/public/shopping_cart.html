@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</link>
+	<link rel="stylesheet" href="CSS/framework.css">
+	</link>
+	<link rel="stylesheet" href="CSS/shopping_cart.css">
+	</link>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</link>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="JS/navbar_be.js"></script>
+	<script src="JS/shoppingCart_be.js"></script>
+	<script src="JS/cookieCheck.js"></script>
+	<title>EINKAUFSWAGEN</title>
+</head>
+
+<body onload="checkItem()">
+	<header>
+		<a href="index.html">
+			<img id="logo" src="pictures/LogoBild.png" alt="Logo"></a>
+		<div>
+			<div class="container-fluid">
+				<div class="row category_links contact_navbar" id="navbar_menu">
+					<div class="col-sm-9"></div>
+					<div class="col-sm-3">
+						<nav class="navbar navbar-expand-sm navbar-light">
+							<ul class="navbar-nav">
+								<li class="nav-item contact_navbar_item">
+									<a class="nav-link" href="contact.html">Kontakt</a>
+								</li>
+								<li class="nav-item contact_navbar_item">
+									<a class="nav-link">+83833333333</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="navbar" id="searchbar">
+					<div class="col-sm-5"></div>
+					<div class="col-sm-6">
+						<nav class="navbar navbar-expand-sm navbar-light">
+							<form class="form-inline" action="search.html">
+								<input class="form-control mr-sm-2" id="search_input" type="text"
+									placeholder="Suchen..." required>
+								<button class="btn" type="submit" onclick="searchCookie()">Suchen</button>
+							</form>
+						</nav>
+					</div>
+					<div class="col-sm-1">
+						<a href="shopping_cart.html"><img id="shoppingCart" src="pictures/commerce-and-shopping.png"
+								alt="Einkaufswagen"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="category_links navbar_menu">
+				<div class="col-sm-2"></div>
+
+				<div class="col-sm-8">
+
+					<div id='dyntarget2'></div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div id="dyntarget5"></div>
+
+		<div class="row mt-5 ml-5 mr-5 mb-3 border-top  border-dark">
+			<div class="p-2 col-9"></div>
+			<div class="p-2 col-1 sum">Pfand:</div>
+			<div class="p-2 col-2" id="deposit">0,00 €</div>
+		</div>
+
+		<div class="row ml-5 mr-5 mb-3">
+			<div class="p-2 col-8"></div>
+			<div class="p-2 col-2 sum">Zwischensumme:</div>
+			<div class="p-2 col-2" id="interSum">0,00 €</div>
+		</div>
+
+		<div class="row ml-5 mr-5 mb-3" id="stroke">
+			<div class="p-2 col-8"></div>
+			<div class="p-2 col-2 sum">Versandkosten:</div>
+			<div class="p-2 col-2" id="shipping">0,00 €</div>
+		</div>
+
+		<div class="row ml-5 mr-5 mb-3">
+			<div class="p-2 col-8"></div>
+			<div class="p-2 col-2 sum">Gesamtkosten:</div>
+			<div class="p-2 col-2" id="allCost">0,00 €</div>
+		</div>
+
+		<div class="container-fluid">
+			<a href="bill_adress.html"><button type="button" id="sendbtn" disabled
+					class="col-6 btn align-self-center btn-danger">Zur Kasse</button></a>
+		</div>
+	</main>
+	<!-- Footer -->
+	<footer class="footer">
+
+		<!-- Footer Links -->
+		<div class="container-fluid text-center text-md-left">
+
+			<!-- Grid row -->
+			<div class="row " id="foot">
+
+				<!-- Grid column -->
+				<div class="col-md-3 mx-auto">
+
+					<!-- Links -->
+					<h3 class="f text-uppercase mt-3 mb-4">Informationen</h3>
+
+					<ul class="list-unstyled">
+						<li class="mb-3">
+							<a class="text-uppercase text-dark" href="about_us.html">Über uns</a>
+						</li>
+						<li class="mb-3">
+							<a class="text-uppercase text-dark" href="contact.html">Kontakt</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Grid column -->
+
+				<hr class="clearfix w-100 d-md-none">
+
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+
+				<hr class="clearfix w-100 d-md-none">
+
+				<!-- Grid column -->
+				<div class="col-md-3 mx-auto">
+
+					<!-- Links -->
+					<h3 class=" text-uppercase mt-3 mb-4">Rechtliches</h3>
+
+					<ul class="list-unstyled">
+						<li class="mb-3">
+							<a class="text-uppercase text-dark" href="agb_imprint.html">AGB/ Impressum</a>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Grid column -->
+
+				<hr class="clearfix w-100 d-md-none">
+
+				<!-- Grid column -->
+				<div class="col-md-3 mx-auto">
+
+					<!-- Links -->
+					<h3 class="text-uppercase mt-3 mb-4">Zahlungsmöglichkeiten</a></h3>
+
+					<ul class="list-unstyled">
+						<li>
+							<img class="rounded" src="pictures/zahlungsmoeglichkeiten.png" alt="Logo" id="payment_pic">
+						</li>
+					</ul>
+
+				</div>
+				<!-- Grid column -->
+
+			</div>
+			<!-- Grid row -->
+
+		</div>
+		<!-- Footer Links -->
+
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2020 Copyright: Die Wilden Winzer
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+</body>
+
+</html>

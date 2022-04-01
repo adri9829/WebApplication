@@ -1,0 +1,42 @@
+.slider {
+    height: 400px;
+}
+
+#container1 {
+    margin-top: 5%;
+}
+
+#container2 {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.slider_productname {
+    text-align: center;
+}
+
+#arrow {
+    height: 50%;
+    width: 50px;
+    margin-top: 5%;
+}
+
+#our_products {
+    margin-left: 4%;
+}
+
+#product_name {
+    text-decoration: none;
+    color: black;
+}
+.pictures {
+    width: 250px;
+}
+
+#product_name:hover h5 {
+    color: grey;
+    font-weight: bold;
+}
+.productname_box {
+	height:50px;
+}

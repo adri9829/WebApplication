@@ -1,0 +1,40 @@
+#upperscored {
+	border-top: solid;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-bottom: 10px;
+}
+
+#product_picture {
+	height: 500px;
+}
+
+#price {
+	margin: 40px;
+	padding-bottom: 10px;
+}
+
+#numeric {
+	margin: 40px;
+}
+
+#prod_sendbtn {
+	margin-left: 70px;
+}
+
+#artikel_details {
+	margin-left: 25px;
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+
+#artikel_details1 {
+	font-size: 18px;
+}
+
+#discription {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 80px;
+	margin-top: 40px;
+}

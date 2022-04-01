@@ -1,0 +1,32 @@
+#marginimp {
+	margin-left: 3em;
+}
+
+#callcenter {
+	height: 58%;
+	width: 58%;
+}
+
+#shopping {
+	margin-top: 5%;
+}
+
+#number {
+	margin-top: 5%;
+}
+
+#garbage {
+	margin-top: 4.5%;
+}
+
+.sum {
+	text-align: right;
+}
+
+#stroke {
+	border-bottom: solid;
+	padding-bottom: 10px;
+}
+.pictures {
+	height:250px;
+}

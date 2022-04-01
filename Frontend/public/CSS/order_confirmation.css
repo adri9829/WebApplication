@@ -1,0 +1,41 @@
+#thanks {
+    margin: 40px;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+#product_picture {
+    height: 200px;
+}
+
+#product_discribtion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#product_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#all_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#back_home {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    color: red;
+}
+.pictures {
+	height:250px;
+}
